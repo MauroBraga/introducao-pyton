@@ -45,5 +45,5 @@ def jogar():
 
     print("fim do jogo")
 
-if(__name__ == "main"):
+if(__name__=="__main__"):
     jogar()
