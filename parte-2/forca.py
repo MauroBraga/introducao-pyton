@@ -1,5 +1,10 @@
 import random
 
+def pede_chute():
+    chute = input("Qual letra?")
+    chute = chute.strip().upper();
+    return chute;
+
 def jogar():
     
     imprime_mensagem_abertura();
@@ -11,9 +16,9 @@ def jogar():
     acertou = False
     erros = 0
 
+
     while(not enforcou and not acertou):
-        chute = input("Qual letra?")
-        chute = chute.strip().upper();
+        chute = pede_chute();
 
         if(chute in palavra_secreta):
             index =0
